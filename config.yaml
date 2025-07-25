@@ -1,0 +1,37 @@
+# Bear Detection System Configuration
+
+camera:
+  default_index: 0
+  resolution:
+    width: 1280
+    height: 720
+  fps: 30
+  buffer_size: 1
+
+detection:
+  model: "yolo11n.pt"  # or yolo11s.pt, yolo11m.pt for higher accuracy
+  confidence_threshold: 0.5
+  process_every_n_frames: 3
+  device: "auto"  # "cuda", "cpu", or "auto"
+
+species_classification:
+  enabled: true
+  model_path: null  # Path to custom species model if available
+  confidence_threshold: 0.3
+
+display:
+  show_confidence: true
+  show_species: true
+  box_thickness: 2
+  font_scale: 0.6
+
+alerts:
+  enabled: false
+  sound_alert: false
+  email_notifications: false
+  log_detections: true
+
+performance:
+  max_fps: 30
+  gpu_memory_limit: 0.8  # Use 80% of available GPU memory
+  cpu_threads: 4
