@@ -1,0 +1,238 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem de Detectare Urși - Ursa Major</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        .feature-card {
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        .demo-section {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-shield-check"></i> Ursa Major</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#acasa">Acasă</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#caracteristici">Caracteristici</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tehnologie">Tehnologie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#instalare">Instalare</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="acasa" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">Sistem Avansat de Detectare Urși</h1>
+            <p class="lead mb-4">Protecție inteligentă pentru comunități și faună sălbatică folosind AI și MegaDetector</p>
+            <div class="d-flex gap-3 justify-content-center">
+                <a href="#instalare" class="btn btn-light btn-lg">
+                    <i class="bi bi-download"></i> Descarcă Acum
+                </a>
+                <a href="https://github.com/AlexMocanV/ursa_major_bear_detection" class="btn btn-outline-light btn-lg">
+                    <i class="bi bi-github"></i> Vezi pe GitHub
+                </a>
+            </div>
+            <div class="mt-5">
+                <img src="demo-screenshot.png" alt="Demo sistem detectare" class="img-fluid rounded shadow" style="max-width: 800px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="caracteristici" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Caracteristici Principale</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card feature-card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-eye display-4 text-primary mb-3"></i>
+                            <h4>Detectare în Timp Real</h4>
+                            <p>Procesare video live cu 24-32 FPS folosind camera USB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-cpu display-4 text-primary mb-3"></i>
+                            <h4>AI Avansat</h4>
+                            <p>Microsoft MegaDetector cu 98% precizie și clasificare specii</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-volume-up display-4 text-primary mb-3"></i>
+                            <h4>Alerte Audio</h4>
+                            <p>Sunete specifice pentru fiecare specie de urs detectată</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-diagram-3 display-4 text-primary mb-3"></i>
+                            <h4>Pipeline Multi-Etapă</h4>
+                            <p>Reducere 40-60% a falsurilor pozitive prin validare temporală</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-palette display-4 text-primary mb-3"></i>
+                            <h4>Identificare Specii</h4>
+                            <p>Urs brun, urs negru și urs polar cu analiză vizuală</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-shield-check display-4 text-primary mb-3"></i>
+                            <h4>Siguranță Comunitară</h4>
+                            <p>Ideal pentru zone montane și protecția fermelor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="tehnologie" class="py-5 demo-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Tehnologie de Ultimă Generație</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3>Cum Funcționează</h3>
+                    <ol class="lead">
+                        <li class="mb-3"><strong>Capturare Video:</strong> Camera USB captează imagini în timp real</li>
+                        <li class="mb-3"><strong>Detectare MegaDetector:</strong> AI-ul identifică animalele cu precizie ridicată</li>
+                        <li class="mb-3"><strong>Clasificare Specii:</strong> Rețea neurală specializată determină specia de urs</li>
+                        <li class="mb-3"><strong>Validare Temporală:</strong> Confirmă detecția prin analiza mai multor cadre</li>
+                        <li class="mb-3"><strong>Alertă Audio:</strong> Declanșează sunet specific pentru specia detectată</li>
+                    </ol>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-dark text-white p-4 rounded">
+                        <pre><code class="text-light">
+# Exemplu de utilizare
+python main.py --config config.yaml
+
+# Rezultat
+[INFO] MegaDetector MDV5A încărcat
+[INFO] Detectare pornită pe camera 0
+[INFO] Urs brun detectat (încredere: 0.92)
+[INFO] Alertă audio declanșată
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="instalare" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Instalare Rapidă</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h4>Cerințe Sistem</h4>
+                            <ul>
+                                <li>Python 3.8+</li>
+                                <li>Camera USB</li>
+                                <li>Windows 10/11, Linux sau macOS</li>
+                                <li>4GB RAM minim (8GB recomandat)</li>
+                                <li>GPU NVIDIA (opțional, pentru performanță)</li>
+                            </ul>
+                            
+                            <h4 class="mt-4">Pași de Instalare</h4>
+                            <ol>
+                                <li>Clonează repository-ul:
+                                    <pre class="bg-light p-2 mt-2"><code>git clone https://github.com/yourusername/ursa_major_bear_detector.git
+cd ursa_major_bear_detector</code></pre>
+                                </li>
+                                <li>Instalează dependențele:
+                                    <pre class="bg-light p-2 mt-2"><code>pip install -r requirements.txt</code></pre>
+                                </li>
+                                <li>Configurează sistemul:
+                                    <pre class="bg-light p-2 mt-2"><code>cp config.example.yaml config.yaml
+# Editează config.yaml pentru setările tale</code></pre>
+                                </li>
+                                <li>Rulează aplicația:
+                                    <pre class="bg-light p-2 mt-2"><code>python main.py --config config.yaml</code></pre>
+                                </li>
+                            </ol>
+                            
+                            <div class="text-center mt-4">
+                                <a href="https://github.com/AlexMocanV/ursa_major_bear_detection/releases" class="btn btn-primary btn-lg">
+                                    <i class="bi bi-download"></i> Descarcă Ultima Versiune
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Contact și Suport</h2>
+            <p class="lead mb-4">Ai întrebări sau ai nevoie de ajutor cu instalarea?</p>
+            <div class="d-flex gap-4 justify-content-center">
+                <a href="mailto:contact@ursamajor.ro" class="btn btn-outline-light">
+                    <i class="bi bi-envelope"></i> Email
+                </a>
+                <a href="https://github.com/yourusername/ursa_major_bear_detector/issues" class="btn btn-outline-light">
+                    <i class="bi bi-bug"></i> Raportează Probleme
+                </a>
+                <a href="https://github.com/yourusername/ursa_major_bear_detector/discussions" class="btn btn-outline-light">
+                    <i class="bi bi-chat-dots"></i> Discuții
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-black text-white-50">
+        <div class="container text-center">
+            <p>&copy; 2025 Ursa Major Bear Detector. Dezvoltat cu ❤️ pentru protecția comunităților din România.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
